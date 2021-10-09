@@ -31,11 +31,11 @@ const controlRecipes = async function () {
 
     //loading recipe
     await model.loadRecipe(id);
-
+    console.log(model.state.recipe);
     //rendering recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
-    recipeView.renderError();
+    recipeView.rendesrError();
   }
 };
 
