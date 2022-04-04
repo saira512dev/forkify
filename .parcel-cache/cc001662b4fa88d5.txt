@@ -1,8 +1,8 @@
-16565
+16573
 101/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/img/logo.png1611751378000000000 0
 92/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/img1611751378000000000 1
 112/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/js/views/resultsView.js1633536345505461225 0
-111/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/js/views/recipeView.js1633763080145706801 0
+111/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/js/views/recipeView.js1633763509881680842 0
 111/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/js/views/searchView.js1629942914861420193 0
 97/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/js/views1633601175984678810 1
 102/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/src/js/helpers.js1633759393876237115 0
@@ -15,10 +15,10 @@
 108/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/index.fa02a0b5.css1633762298683251016 0
 107/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/logo.739a33b1.png1633762297851239273 0
 108/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/icons.1ea35d5c.svg1633762297927240346 0
-107/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/index.436439df.js1633763093825807056 0
+107/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/index.436439df.js1633763551654134839 0
 110/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/favicon.62381efe.png1633762297847239217 0
-89/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist1633763093861807322 1
-102/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/package-lock.json1629384371761272385 0
+89/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist1633763551682135145 1
+102/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/package-lock.json1633763486753433348 0
 113/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/split2/index.js499162500000000000 0
 113/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/split2/bench.js499162500000000000 0
 145/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/split2/node_modules/readable-stream/readable.js499162500000000000 0
@@ -1335,7 +1335,6 @@
 106/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/inherits1628059196691249220 1
 122/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/queue-microtask/index.js499162500000000000 0
 121/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/queue-microtask/LICENSE499162500000000000 0
-123/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/queue-microtask/README.md499162500000000000 0
 124/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/queue-microtask/index.d.ts499162500000000000 0
 113/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/queue-microtask1628059195503231189 1
 122/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/v8-compile-cache/LICENSE499162500000000000 0
@@ -1606,6 +1605,13 @@
 126/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/filesize/lib/filesize.min.js499162500000000000 0
 122/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/filesize/lib/filesize.js499162500000000000 0
 116/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/filesize/README.md499162500000000000 0
+123/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/queue-microtask/README.md499162500000000000 0
+121/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js/fraction.js499162500000000000 0
+122/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js/package.json1633763484941414080 0
+125/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js/fraction.min.js499162500000000000 0
+123/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js/fraction.d.ts499162500000000000 0
+119/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js/README.md499162500000000000 0
+124/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js/bigfraction.js499162500000000000 0
 127/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/object-inspect/example/all.js499162500000000000 0
 131/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/object-inspect/example/inspect.js499162500000000000 0
 126/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/object-inspect/example/fn.js499162500000000000 0
@@ -2190,6 +2196,7 @@
 109/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/graceful-fs1628059196767250374 1
 115/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/mimic-fn/index.js499162500000000000 0
 116/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/mimic-fn/readme.md499162500000000000 0
+117/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js/LICENSE499162500000000000 0
 114/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/mimic-fn/license499162500000000000 0
 106/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/mimic-fn1628059196203241814 1
 127/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/escape-string-regexp/index.js1456057032000000000 0
@@ -3005,7 +3012,7 @@
 122/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/colord/plugins/cmyk.d.ts499162500000000000 0
 130/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/es-abstract/2016/RegExpCreate.js499162500000000000 0
 148/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/postcss-minify-font-values/dist/lib/minify-font.js499162500000000000 0
-111/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/index.436439df.js.map1633763093853807263 0
+111/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/dist/index.436439df.js.map1633763551682135145 0
 122/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/core-js/stable/escape.js499162500000000000 0
 114/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/ieee754/index.js499162500000000000 0
 118/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/ieee754/package.json1628059196679249038 0
@@ -8577,7 +8584,7 @@
 150/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/tar-stream/node_modules/readable-stream/lib/internal1628059714770976546 1
 135/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/@parcel/transformer-html/node_modules1628059193131195181 1
 149/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/postcss-modules/node_modules/postcss/lib/comment.js499162500000000000 0
-84/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter1633745479302029070 1
+84/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter1633763486865434540 1
 134/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/core-js/stable/array-buffer/slice.js499162500000000000 0
 157/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/postcss-modules-values/node_modules/postcss/CONTRIBUTING.md499162500000000000 0
 137/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/cssstyle/scripts/generate_properties.js499162500000000000 0
@@ -8898,7 +8905,7 @@
 132/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/micromatch/node_modules/fill-range1628059195507231249 1
 150/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/jsdom/lib/jsdom/living/svg/SVGAnimatedString-impl.js499162500000000000 0
 152/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/postcss-modules-scope/node_modules/color-name/index.js1500156807000000000 0
-97/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules1633763010077230140 1
+97/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules1633763484957414250 1
 123/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/terser/lib/mozilla-ast.js499162500000000000 0
 149/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/@parcel/transformer-react-refresh-wrap/package.json1628059193919207144 0
 109/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/tar-fs/test1628059714790976840 1
@@ -9755,7 +9762,7 @@
 127/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/@nodelib/fs.scandir/README.md499162500000000000 0
 129/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/caniuse-lite/data/regions/CG.js499162500000000000 0
 115/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/core-js/proposals1628666919877824696 1
-97/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/package.json1633744885500736226 0
+97/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/package.json1633763485549420544 0
 124/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/shebang-regex/package.json1628059195267227607 0
 133/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/@parcel/config-default/package.json1628059193915207083 0
 121/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/es-abstract/2015/abs.js499162500000000000 0
@@ -14210,6 +14217,7 @@
 118/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/array-union/index.js499162500000000000 0
 113/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/unbox-primitive1628059194167210909 1
 117/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/object.pick/LICENSE1503101157000000000 0
+109/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/fraction.js1633763484945414123 1
 133/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/es-abstract/2017/thisNumberValue.js499162500000000000 0
 118/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/object.pick/index.js1503101157000000000 0
 138/home/saira/Documents/workspace/complete-javascript-course-master/18-forkify/starter/node_modules/core-js/features/typed-array/group-by.js499162500000000000 0
