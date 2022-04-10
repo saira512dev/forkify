@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="src/img/logo.png" alt="Logo" class="header__logo" />
+        <a href="index.html" ><img src="src/img/logo.png" alt="Logo" class="header__logo" /></a>
         <form class="search">
           <input
             type="text"
@@ -33,6 +33,11 @@
             <span>Search</span>
           </button>
         </form>
+        <div class="hamburger-menu_btn">
+           <div class="btn-line"></div>
+           <div class="btn-line"></div>
+           <div class="btn-line"></div>
+        </div>
 
         <nav class="nav">
           <ul class="nav__list">
@@ -51,7 +56,9 @@
                 </svg>
                 <span>Bookmarks</span>
               </button>
-              <div class="bookmarks">
+              <div class="bookmarks hidden">
+                <button class="btn--close-bookmarks" >&times;</button>
+
                 <ul class="bookmarks__list">
                   <div class="message">
                     <div>
@@ -64,73 +71,55 @@
                     </p>
                   </div>
 
-                  <!-- <li class="preview">
-                    <a class="preview__link" href="#23456">
-                      <figure class="preview__fig">
-                        <img src="src/img/test-1.jpg" alt="Test" />
-                      </figure>
-                      <div class="preview__data">
-                        <h4 class="preview__name">
-                          Pasta with Tomato Cream ...
-                        </h4>
-                        <p class="preview__publisher">The Pioneer Woman</p>
-                      </div>
-                    </a>
-                  </li> -->
                 </ul>
               </div>
             </li>
           </ul>
         </nav>
       </header>
+     
 
       <div class="search-results">
-        <ul class="results">
-          <!-- 
-          <li class="preview">
-            <a class="preview__link preview__link--active" href="#23456">
-              <figure class="preview__fig">
-                <img src="src/img/test-1.jpg" alt="Test" />
-              </figure>
-              <div class="preview__data">
-                <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
-                <p class="preview__publisher">The Pioneer Woman</p>
-                <div class="preview__user-generated">
-                  <svg>
-                    <use href="src/img/icons.svg#icon-user"></use>
+        <div class="hamburger-menu_items hide">
+            <ul >
+              <li >
+                <button class="nav__btn nav__btn--add-recipe-small">
+                  <svg class="nav__icon">
+                    <use href="src/img/icons.svg#icon-edit"></use>
                   </svg>
+                  <span>Add recipe</span>
+                </button>
+              </li>
+              <li>
+                <button class="nav__btn nav__btn--bookmarks-small">
+                  <svg class="nav__icon">
+                    <use href="src/img/icons.svg#icon-bookmark"></use>
+                  </svg>
+                  <span>Bookmarks</span>
+                </button>
+                <div class="bookmarks">
+                  <button class="btn--close-bookmarks" >&times;</button>
+                  <ul class="bookmarks__list">
+                    <div class="message">
+                      <div>
+                        <svg>
+                          <use href="src/img/icons.svg#icon-smile"></use>
+                        </svg>
+                      </div>
+                      <p>
+                        No bookmarks yet. Find a nice recipe and bookmark it :)
+                      </p>
+                    </div>
+                  </ul>
                 </div>
-              </div>
-            </a>
-          </li>
-           -->
+              </li>
+            </ul>
+        </div>
+        <ul class="results">
         </ul>
 
         <div class="pagination">
-          <!-- <button class="btn--inline pagination__btn--prev">
-            <svg class="search__icon">
-              <use href="src/img/icons.svg#icon-arrow-left"></use>
-            </svg>
-            <span>Page 1</span>
-          </button>
-          <button class="btn--inline pagination__btn--next">
-            <span>Page 3</span>
-            <svg class="search__icon">
-              <use href="src/img/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button> -->
         </div>
-
-        <!-- <p class="copyright">
-          &copy; Copyright by
-          <a
-            class="twitter-link"
-            target="_blank"
-            href="https://twitter.com/jonasschmedtman"
-            >Jonas Schmedtmann</a
-          >. Use for learning or your portfolio. Don't use to teach. Don't claim
-          as your own.
-        </p> -->
       </div>
 
       <div class="recipe">
@@ -147,7 +136,7 @@
 
     <div class="overlay hidden"></div>
     <div class="add-recipe-window hidden">
-      <button class="btn--close-modal">&times;</button>
+      <button class="btn--close-modal" >&times;</button>
       <form class="upload">
         <div class="upload__column">
           <h3 class="upload__heading">Recipe data</h3>
@@ -209,7 +198,7 @@
           />
         </div>
 
-        <button class="btn upload__btn">
+        <button class="btn upload__btn" onclick ="'#recipe__fig'">
           <svg>
             <use href="src/img/icons.svg#icon-upload-cloud"></use>
           </svg>

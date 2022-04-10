@@ -7,7 +7,7 @@ class PreviewView extends View {
   _generateMarkup() {
     const id = window.location.hash.slice(1);
 
-    return `<li class="preview">
+    return `<li class="preview" onclick ="location.href='#recipe__fig'">
     <a class="preview__link ${
       this._data.id === id ? 'preview__link--active' : ''
     }" href="#${this._data.id}">

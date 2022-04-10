@@ -8,6 +8,8 @@ class AddRecipeView extends View {
   _window = document.querySelector('.add-recipe-window');
   _overlay = document.querySelector('.overlay');
   _btnOpen = document.querySelector('.nav__btn--add-recipe');
+  _btnOpenSmall = document.querySelector('.nav__btn--add-recipe-small');
+
   _btnClose = document.querySelector('.btn--close-modal');
 
   constructor() {
@@ -24,6 +26,7 @@ class AddRecipeView extends View {
 
   _addHandlerShowWindow() {
     this._btnOpen.addEventListener('click', this.toggleWindow.bind(this));
+    this._btnOpenSmall.addEventListener('click', this.toggleWindow.bind(this));
   }
 
   _addHandlerHideWindow() {
@@ -41,6 +44,9 @@ class AddRecipeView extends View {
   }
 
   _generateMarkup() {}
+
+  
+
 }
 
 export default new AddRecipeView();
