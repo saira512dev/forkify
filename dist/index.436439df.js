@@ -1468,14 +1468,13 @@ class View {
     render(data, render = true) {
         if (!data || Array.isArray(data) && data.length === 0) return this.renderError();
         this._data = data;
-        console.log(this._data);
+        // console.log(this._data);
         const markup = this._generateMarkup();
         if (!render) return markup;
         this._clear();
-        console.log(this._parentElement);
-        if (this._parentElement.length > 0) this._parentElement.forEach((el)=>el.insertAdjacentHTML('afterbegin', markup)
-        );
-        else this._parentElement.insertAdjacentHTML('afterbegin', markup);
+        // console.log(this._parentElement)
+        //if(this._parentElement.length > 0) this._parentElement.forEach(el => el.insertAdjacentHTML('afterbegin', markup))
+        this._parentElement.insertAdjacentHTML('afterbegin', markup);
     }
     update(data) {
         // if (!data || (Array.isArray(data) && data.length === 0))
@@ -2171,7 +2170,7 @@ class SearchView {
     _parentEl = document.querySelector('.search');
     getQuery() {
         const query = this._parentEl.querySelector('.search__field').value;
-        console.log(query);
+        // console.log(query);
         this._clearInput();
         return query;
     }
@@ -2290,37 +2289,69 @@ class BookmarksView extends _viewJsDefault.default {
         this._closeWindow();
         this._openWindow();
         this._clickHamburger();
+        this.setParentElement();
     }
-    // checkifSmallScreen = function(){
-    //   console.log("KKKK")
-    //   if(document.body.clientWidth > 600) return false;
-    //   return true
-    // }
-    _parentElement = document.querySelector('.bookmarks__list');
-    _bookmarks = document.querySelector('.bookmarks');
-    _btnClose = document.querySelector('.btn--close-bookmarks');
-    _btnOpen = document.querySelector('.nav__btn--bookmarks');
+    checkifSmallScreen() {
+        console.log("KKKK");
+        if (document.body.clientWidth <= 600) return true;
+        return false;
+    }
+    _parentElement = this.checkifSmallScreen() ? document.querySelector('.bookmarks__list-small') : document.querySelector('.bookmarks__list');
+    _btnCloseArr = document.querySelectorAll('.btn--close-bookmarks');
+    _btnOpenArr = document.querySelectorAll('.nav__btn--bookmarks');
     _btnHamburger = document.querySelector('.hamburger-menu_btn');
     _menuHamburger = document.querySelector('.hamburger-menu_items');
-    // if(checkifSmallScree) {
-    //   _parentElement = document.querySelectorAll('.bookmarks__list');
-    // } 
-    toggleWindow() {
-        //this._bookmarks.style.visibility == 'hidden' ? this._bookmarks.style.visibility ='visible' : this._bookmarks.style.visibility = 'hidden';
-        this._bookmarks.classList.toggle('hidden');
+    // _btnBookmarksSmall = document.querySelector('.nav__btn--bookmarks-small')
+    setParentElement() {
+        this._parentElement = this.checkifSmallScreen() ? document.querySelector('.bookmarks__list-small') : document.querySelector('.bookmarks__list');
+    }
+    freshen() {
+        let content = document.querySelector('.bookmarks__list-small').innerHTML;
+        document.querySelector('.bookmarks__list-small').innerHTML = content;
+        let content2 = document.querySelector('.bookmarks__list').innerHTML;
+        document.querySelector('.bookmarks__list').innerHTML = content2;
+    }
+    toggleWindow(btn) {
+        this.setParentElement();
+        // this.freshen();
+        this.nearestBookmark(btn).classList.toggle('hidden');
+        console.log(this.nearestBookmark(btn));
+        // this._parentElement = this.nearestBookmark(btn).children[1];
+        this._generateMarkup();
+        console.log(this._parentElement);
+        console.log(this.checkifSmallScreen());
+    }
+    hideWindow(btn) {
+        btn.closest('.bookmarks').classList.toggle('hidden');
+        // this._parentElement = this.checkifSmallScreen() ? document.querySelector('.bookmarks__list-small') : document.querySelector('.bookmarks__list');
+        // this.freshen();
+        //this._generateMarkup()
+        this.setParentElement();
+    }
+    nearestBookmark(buttonName) {
+        return buttonName.nextElementSibling;
     }
     toggleHamburgerMenu() {
+        // location.reload();
         console.log("hai");
         this._menuHamburger.classList.toggle('hide');
+        this.setParentElement();
     }
     _clickHamburger() {
+        this.setParentElement();
         this._btnHamburger.addEventListener('click', this.toggleHamburgerMenu.bind(this));
     }
     _openWindow() {
-        this._btnOpen.addEventListener('click', this.toggleWindow.bind(this));
+        this.setParentElement();
+        this._btnOpenArr.forEach((btn)=>{
+            btn.addEventListener('click', this.toggleWindow.bind(this, btn));
+        });
     }
     _closeWindow() {
-        this._btnClose.addEventListener('click', this.toggleWindow.bind(this));
+        this._btnCloseArr.forEach((btn)=>{
+            btn.addEventListener('click', this.hideWindow.bind(this, btn));
+        });
+        this.setParentElement();
     }
     _errorMessage = 'No bookmarks yet.Find a recipe and bookmark it ;)';
     _message = '';
@@ -2328,7 +2359,7 @@ class BookmarksView extends _viewJsDefault.default {
         window.addEventListener('load', handler);
     }
     _generateMarkup() {
-        console.log(this._data);
+        //console.log(this._data)
         return this._data.map((bookmark)=>_previewViewJsDefault.default.render(bookmark, false)
         ).join('');
     }

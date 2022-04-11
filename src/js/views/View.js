@@ -9,15 +9,15 @@ export default class View {
 
     this._data = data;
 
-    console.log(this._data);
+   // console.log(this._data);
     const markup = this._generateMarkup();
 
     if (!render) return markup;
 
     this._clear();
-    console.log(this._parentElement)
-   if(this._parentElement.length > 0) this._parentElement.forEach(el => el.insertAdjacentHTML('afterbegin', markup))
-    else  this._parentElement.insertAdjacentHTML('afterbegin', markup);
+   // console.log(this._parentElement)
+   //if(this._parentElement.length > 0) this._parentElement.forEach(el => el.insertAdjacentHTML('afterbegin', markup))
+     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
   update(data) {
